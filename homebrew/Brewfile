@@ -1,0 +1,11 @@
+tap "homebrew/services"
+
+brew "git"
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "eza"
+brew "zoxide"
+
+cask "alacritty"
+cask "font-jetbrains-mono-nerd-font"
