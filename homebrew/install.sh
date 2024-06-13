@@ -1,7 +1,8 @@
-echo "* Installing brew apps"
-brew bundle --file=./homebrew/Brewfile >/dev/null
+#!/bin/bash
 
-if [[ -e ~/.Brewfile ]]; then
-  echo "* Installing brew apps (~/.Brewfile)"
-  brew bundle --file=~/.Brewfile >/dev/null
+if [ -f Brewfile ]; then
+    echo "Running brew bundle install..."
+    brew bundle install
+else
+    echo "Brewfile not found. Make sure the Brewfile is in the current directory."
 fi
