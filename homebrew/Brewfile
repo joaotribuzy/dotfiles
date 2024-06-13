@@ -8,6 +8,7 @@ brew 'pyenv'
 brew 'node'
 brew 'nvm'
 brew 'cocoapods'
+brew 'mas'
 
 tap 'oven-sh/bun'
 

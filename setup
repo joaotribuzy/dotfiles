@@ -30,7 +30,18 @@ setup_alacritty() {
     cd ..
 }
 
+# Run mas.sh from /mas to install apps from the AppStore
+setup_mas() {
+    local mas_config_dir="$(dirname "$0")/mas"
+    local mas_config_path="$mas_config_dir/mas.sh"
+
+    chmod +x "$mas_config_path"
+    cd "$mas_config_dir" && ./mas.sh
+    cd ..
+}
+
 # Main script
 setup_homebrew
 setup_zsh
 setup_alacritty
+setup_mas
