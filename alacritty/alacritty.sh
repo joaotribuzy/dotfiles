@@ -21,4 +21,4 @@ fi
 mkdir -p "$destination_dir"
 
 # Copy the content of the source file to the destination file
-cp "$source_file" "$destination_file" && echo "Alacritty config file copied successfully!"
+cp "$source_file" "$destination_file" && echo "✅ 'Alacritty' config file copied successfully!"

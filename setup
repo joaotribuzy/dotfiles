@@ -10,8 +10,18 @@ setup_homebrew() {
     cd ..
 }
 
-# Run setup_alacritty_config.sh from /alacritty
-run_alacritty_config() {
+# Run zsh.sh from /zsh
+setup_zsh() {
+    local zsh_config_dir="$(dirname "$0")/zsh"
+    local zsh_config_path="$zsh_config_dir/zsh.sh"
+
+    chmod +x "$zsh_config_path"
+    cd "$zsh_config_dir" && ./zsh.sh
+    cd ..
+}
+
+# Run alacritty.sh from /alacritty
+setup_alacritty() {
     local alacritty_config_dir="$(dirname "$0")/alacritty"
     local alacritty_config_path="$alacritty_config_dir/alacritty.sh"
 
@@ -22,4 +32,5 @@ run_alacritty_config() {
 
 # Main script
 setup_homebrew
-run_alacritty_config
+setup_zsh
+setup_alacritty
