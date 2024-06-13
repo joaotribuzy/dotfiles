@@ -1,11 +1,17 @@
-tap "homebrew/services"
+brew 'git'
+brew 'zsh'
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
+brew 'eza'
+brew 'zoxide'
+brew 'pyenv'
+brew 'node'
+brew 'nvm'
+brew 'cocoapods'
 
-brew "git"
-brew "zsh"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
-brew "eza"
-brew "zoxide"
+tap 'oven-sh/bun'
 
-cask "alacritty"
-cask "font-jetbrains-mono-nerd-font"
+cask 'alacritty'
+cask 'font-jetbrains-mono-nerd-font'
+cask 'xcodes'
+cask 'proxyman'
