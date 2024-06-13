@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo
+echo "--------- 🏭 ALACRITY ---------"
 # Source file path
 source_file="alacritty.toml"
 
@@ -19,4 +21,4 @@ fi
 mkdir -p "$destination_dir"
 
 # Copy the content of the source file to the destination file
-cp "$source_file" "$destination_file" && echo "Content copied successfully to $destination_file"
+cp "$source_file" "$destination_file" && echo "Alacritty config file copied successfully!"

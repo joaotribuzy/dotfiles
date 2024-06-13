@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Run homebrew.sh from /homebrew
+setup_homebrew() {
+    local brewfile_dir="$(dirname "$0")/homebrew"
+    local brewfile_path="$brewfile_dir/homebrew.sh"
+
+    chmod +x "$brewfile_path"
+    cd "$brewfile_dir" && ./homebrew.sh
+    cd ..
+}
+
+# Run setup_alacritty_config.sh from /alacritty
+run_alacritty_config() {
+    local alacritty_config_dir="$(dirname "$0")/alacritty"
+    local alacritty_config_path="$alacritty_config_dir/alacritty.sh"
+
+    chmod +x "$alacritty_config_path"
+    cd "$alacritty_config_dir" && ./alacritty.sh
+    cd ..
+}
+
+# Main script
+setup_homebrew
+run_alacritty_config
