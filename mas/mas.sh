@@ -16,3 +16,6 @@ mas install 497799835
 
 # RocketSim
 mas install 1504940162
+
+# Magnet
+mas install 441258766
