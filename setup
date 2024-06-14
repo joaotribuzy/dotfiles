@@ -10,6 +10,16 @@ setup_homebrew() {
     cd ..
 }
 
+# Run git.sh from /git
+setup_git() {
+    local git_config_dir="$(dirname "$0")/git"
+    local git_config_path="$git_config_dir/git.sh"
+
+    chmod +x "$git_config_path"
+    cd "$git_config_dir" && ./git.sh
+    cd ..
+}
+
 # Run zsh.sh from /zsh
 setup_zsh() {
     local zsh_config_dir="$(dirname "$0")/zsh"
@@ -62,6 +72,7 @@ setup_spotify() {
 
 # Main script
 setup_homebrew
+setup_git
 setup_zsh
 setup_alacritty
 setup_mas
