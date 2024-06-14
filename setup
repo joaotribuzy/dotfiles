@@ -40,6 +40,16 @@ setup_mas() {
     cd ..
 }
 
+# Run xcodes.sh from /xcodes to install Xcode latest version
+setup_xcodes() {
+    local xcode_config_dir="$(dirname "$0")/xcodes"
+    local xcode_config_path="$xcode_config_dir/xcodes.sh"
+
+    chmod +x "$xcode_config_path"
+    cd "$xcode_config_dir" && ./xcodes.sh
+    cd ..
+}
+
 # Run spotify.sh from /spotify to change Spotify Icon
 setup_spotify() {
     local spotify_config_dir="$(dirname "$0")/spotify"
@@ -50,10 +60,10 @@ setup_spotify() {
     cd ..
 }
 
-
 # Main script
 setup_homebrew
 setup_zsh
 setup_alacritty
 setup_mas
+setup_xcodes
 setup_spotify

@@ -9,6 +9,7 @@ brew 'node'
 brew 'nvm'
 brew 'cocoapods'
 brew 'mas'
+brew 'xcodesorg/made/xcodes'
 
 tap 'oven-sh/bun'
 
