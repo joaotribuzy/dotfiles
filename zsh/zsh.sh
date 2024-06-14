@@ -1,7 +1,13 @@
 #!/bin/bash
 
-echo
-echo "--------- ⚙️ OH-MY-ZSH ---------"
+# Switch to zsh
+if [ -z "$ZSH_NAME" ]; then
+    echo
+    echo "--------- ⚙️ OH-MY-ZSH ---------"
+    echo "Switching to zsh..."
+    exec zsh "$0" "$@"
+fi
+
 # Source file path
 source_file=".zshrc"
 
@@ -19,3 +25,6 @@ fi
 
 # Copy the content of the source file to the destination file
 cp "$source_file" "$destination_file" && echo "✅ 'oh-my-zsh' config file copied successfully!"
+
+# Source ~/.zshrc
+source ~/.zshrc

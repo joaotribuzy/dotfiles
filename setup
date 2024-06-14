@@ -20,6 +20,16 @@ setup_git() {
     cd ..
 }
 
+# Run nvm.sh from /nvm
+setup_nvm() {
+    local nvm_config_dir="$(dirname "$0")/nvm"
+    local nvm_config_path="$nvm_config_dir/nvm.sh"
+
+    chmod +x "$nvm_config_path"
+    cd "$nvm_config_dir" && ./nvm.sh
+    cd ..
+}
+
 # Run zsh.sh from /zsh
 setup_zsh() {
     local zsh_config_dir="$(dirname "$0")/zsh"
@@ -73,6 +83,7 @@ setup_spotify() {
 # Main script
 setup_homebrew
 setup_git
+setup_nvm
 setup_zsh
 setup_alacritty
 setup_mas

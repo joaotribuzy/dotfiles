@@ -37,3 +37,7 @@ eval "$(zoxide init zsh)"
 # pyenv
 export PATH="$(pyenv root)/shims:${PATH}"
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
