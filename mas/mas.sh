@@ -13,3 +13,6 @@ mas install 1278508951
 
 # Xcode
 mas install 497799835
+
+# RocketSim
+mas install 1504940162
