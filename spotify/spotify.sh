@@ -2,7 +2,6 @@
 
 echo
 echo "--------- 🎧 SPOTIFY ---------"
-echo
 
 # Path to the application (.app)
 app_path="/Applications/Spotify.app"

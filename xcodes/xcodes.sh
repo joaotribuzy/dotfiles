@@ -2,7 +2,6 @@
 
 echo
 echo "--------- 🔨 XCODE ---------"
-echo
 
 # Find the path to any application that has "Xcode" in its name
 xcode_app_path=~/Applications/Xcode.app
