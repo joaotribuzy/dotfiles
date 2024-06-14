@@ -18,3 +18,9 @@ mas install 1504940162
 
 # Magnet
 mas install 441258766
+
+# Swift Playgrounds
+mas install 1496833156
+
+# TestFlight
+mas install 899247664
