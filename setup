@@ -40,8 +40,20 @@ setup_mas() {
     cd ..
 }
 
+# Run spotify.sh from /spotify to change Spotify Icon
+setup_spotify() {
+    local spotify_config_dir="$(dirname "$0")/spotify"
+    local spotify_config_path="$spotify_config_dir/spotify.sh"
+
+    chmod +x "$spotify_config_path"
+    cd "$spotify_config_dir" && ./spotify.sh
+    cd ..
+}
+
+
 # Main script
 setup_homebrew
 setup_zsh
 setup_alacritty
 setup_mas
+setup_spotify
