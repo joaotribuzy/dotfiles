@@ -1,3 +1,2 @@
-[user]
-	email = github@joaotribuzy.com
-	name = João Tribuzy
+[includeIf "gitdir:/Users/J169866/dev/"]
+    path = ~/.gitconfig.personal

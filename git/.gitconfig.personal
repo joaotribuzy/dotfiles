@@ -1,0 +1,10 @@
+[user]
+    name = João Tribuzy
+    email = github@joaotribuzy.com
+    signingkey = EBA5240912CD2ED4
+[commit]
+    gpgsign = true
+[tag]
+    forceSignAnnotated = true
+[gpg]
+    program = /usr/local/MacGPG2/bin/gpg2
