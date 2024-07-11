@@ -4,6 +4,10 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+# Locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Aliases
 # Run 'alias' to see a full list
 alias ls="eza --color=always --long --no-filesize --icons=always --no-time --no-user --no-permissions"
