@@ -24,3 +24,6 @@ mas install 1496833156
 
 # TestFlight
 mas install 899247664
+
+# Menu Bar Calendar
+mas install 1558360383
